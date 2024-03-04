@@ -17,4 +17,4 @@ require (
 	google.golang.org/protobuf v1.30.0 // indirect
 )
 
-replace github.com/hibiken/asynqmon => github.com/acenda/asynqmon cca2f0078805e
+replace github.com/hibiken/asynqmon => github.com/acenda/asynqmon v0.0.0-20240228220759-cca2f0078805
