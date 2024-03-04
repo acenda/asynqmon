@@ -16,3 +16,5 @@ require (
 	golang.org/x/time v0.3.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 )
+
+replace github.com/hibiken/asynqmon => github.com/acenda/asynqmon cca2f0078805e
