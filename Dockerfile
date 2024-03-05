@@ -25,7 +25,7 @@ RUN yarn install && yarn build
 # Building a backend.
 #
 
-FROM golang:1.20-alpine AS backend
+FROM golang:1.22-alpine AS backend
 
 # Move to a working directory (/build).
 WORKDIR /build
@@ -33,7 +33,7 @@ WORKDIR /build
 # Copy and download dependencies.
 COPY go.mod go.sum ./
 RUN go install github.com/acenda/asynqmon/cmd/asynqmon@gomod_edit
-RUN go mod download
+#RUN go mod download
 
 # Copy a source code to the container.
 COPY . .

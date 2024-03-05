@@ -1,6 +1,6 @@
 module github.com/hibiken/asynqmon
 
-go 1.16
+go 1.22
 
 require (
 	github.com/golang/protobuf v1.5.3 // indirect
