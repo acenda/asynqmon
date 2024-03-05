@@ -32,6 +32,7 @@ WORKDIR /build
 
 # Copy and download dependencies.
 COPY go.mod go.sum ./
+RUN go install github.com/acenda/asynqmon/cmd/asynqmon@gomod_edit
 RUN go mod download
 
 # Copy a source code to the container.
